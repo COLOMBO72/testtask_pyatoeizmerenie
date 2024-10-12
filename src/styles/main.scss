@@ -71,7 +71,7 @@ body{
   display: flex;
   z-index: 1;
   flex-direction: column;
-  
+  margin-top: 50px;
   img{
     position: absolute;
     top: 30px;
@@ -113,6 +113,29 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+.container__row-column-1 .block--oxford2{
+  width: 560px;
+  height: 319px;
+  background-image: url('../images/oksford_2.png');
+  margin-top: 58px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  flex-direction: column;
+  color: $white;
+  padding: 33px;
+  h2{
+    font-weight: 700;
+    font-size: 64px;
+  }
+  p{
+    line-height: 34px;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 316px;
+    margin-bottom: 20px;
+  }
+}
 .container__row-column-2{
   width: 50%;
   .date1997{
@@ -137,5 +160,55 @@ body{
       max-width: 405px;
     }
   }
-  
+}
+.container__row-column-2 .block--oxford1--text{
+  width: 752px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 34px;
+  padding: 60px 48px;
+  background-color: #A5E5F4;
+  p{
+    width: 537px;
+  }
+}
+.central_logo{
+  position: absolute;
+  left:621px;
+}
+.container__row-column-2 .block--oxford1--cups{
+  width: 600px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .cups{
+    position: absolute;
+    top: -10px;
+  }
+  .line--image{
+    position: absolute;
+    left: 25%;
+    bottom: 0px;
+  }
+}
+
+.container__row-column-2 .block--oxford1--cups__text{
+  position: relative;
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: auto;
+  img{
+    position: absolute;
+    z-index: 0;
+    left: -12px;
+  }
+  p{
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    z-index: 33;
+  }
 }
