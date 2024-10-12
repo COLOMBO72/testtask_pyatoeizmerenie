@@ -8,18 +8,20 @@ $yellow: #FFE267;
 $template: #a39c7d3d;
 $template2: rgba(255, 0, 0, 0.473);
 
-body{
+body {
   font-family: "Rubik", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.triangle_gray{
+
+.triangle_gray {
   position: absolute;
   left: 0px;
   top: 13%;
 }
-.container__general{
+
+.container__general {
   width: 1440px;
   position: relative;
   margin-top: 130px;
@@ -27,31 +29,37 @@ body{
   flex-direction: column;
   align-items: center;
 }
-.container__row{
+
+.container__row {
   width: 1119px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.container__row-column-1{
+
+.container__row-column-1 {
   width: 50%;
 }
-.container__row-column-1 .date1969{
+
+.container__row-column-1 .date1969 {
   margin: 25px 16px;
   position: relative;
   display: flex;
   flex-direction: column;
-  img{
+
+  img {
     position: absolute;
     top: 30px;
     left: 30px;
   }
-  h2{
+
+  h2 {
     font-weight: 700;
     font-size: 64px;
     z-index: 1;
   }
-  p{
+
+  p {
     z-index: 1;
     line-height: 34px;
     margin-left: 15%;
@@ -60,36 +68,42 @@ body{
     max-width: 448px;
   }
 }
-.date__container--text{
+
+.date__container--text {
   display: flex;
   flex-direction: column;
   z-index: 2;
   align-items: center;
 }
-.container__row-column-1 .date2008{
+
+.container__row-column-1 .date2008 {
   position: relative;
   display: flex;
   z-index: 1;
   flex-direction: column;
   margin-top: 50px;
-  img{
+
+  img {
     position: absolute;
     top: 30px;
     left: 30px;
     z-index: 1;
   }
-  h2{
+
+  h2 {
     font-weight: 700;
     font-size: 64px;
   }
-  p{
+
+  p {
     line-height: 34px;
     font-weight: 400;
     font-size: 16px;
     max-width: 316px;
     margin-bottom: 20px;
   }
-  button{
+
+  button {
     background-color: #E63239;
     padding: 20px 48px;
     width: 287px;
@@ -97,12 +111,14 @@ body{
     color: $white;
   }
 }
-.threedots{
+
+.threedots {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.threedots-oneline{
+
+.threedots-oneline {
   background-image: url("../images/lineofdots_vertical.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -113,7 +129,8 @@ body{
   align-items: center;
   justify-content: space-between;
 }
-.container__row-column-1 .block--oxford2{
+
+.container__row-column-1 .block--oxford2 {
   width: 560px;
   height: 319px;
   background-image: url('../images/oksford_2.png');
@@ -124,11 +141,13 @@ body{
   flex-direction: column;
   color: $white;
   padding: 33px;
-  h2{
+
+  h2 {
     font-weight: 700;
     font-size: 64px;
   }
-  p{
+
+  p {
     line-height: 34px;
     font-weight: 400;
     font-size: 16px;
@@ -136,22 +155,27 @@ body{
     margin-bottom: 20px;
   }
 }
-.container__row-column-2{
+
+.container__row-column-2 {
   width: 50%;
-  .date1997{
+
+  .date1997 {
     position: relative;
     display: flex;
     flex-direction: column;
-    img{
+
+    img {
       position: absolute;
       top: 10px;
     }
-    h2{
+
+    h2 {
       font-weight: 700;
       font-size: 64px;
       z-index: 1;
     }
-    p{
+
+    p {
       z-index: 1;
       line-height: 34px;
       margin-top: 2%;
@@ -161,7 +185,8 @@ body{
     }
   }
 }
-.container__row-column-2 .block--oxford1--text{
+
+.container__row-column-2 .block--oxford1--text {
   width: 752px;
   display: flex;
   flex-direction: column;
@@ -169,46 +194,138 @@ body{
   line-height: 34px;
   padding: 60px 48px;
   background-color: #A5E5F4;
-  p{
+
+  p {
     width: 537px;
   }
 }
-.central_logo{
+
+.central_logo {
   position: absolute;
-  left:621px;
+  left: 621px;
 }
-.container__row-column-2 .block--oxford1--cups{
+
+.container__row-column-2 .block--oxford1--cups {
   width: 600px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  .cups{
+
+  .cups {
     position: absolute;
     top: -10px;
   }
-  .line--image{
+
+  .line--image {
     position: absolute;
     left: 25%;
     bottom: 0px;
   }
 }
 
-.container__row-column-2 .block--oxford1--cups__text{
+.container__row-column-2 .block--oxford1--cups__text {
   position: relative;
   display: flex;
   margin-bottom: 0px;
   margin-top: auto;
-  img{
+
+  img {
     position: absolute;
     z-index: 0;
     left: -12px;
   }
-  p{
+
+  p {
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 6px;
     z-index: 33;
   }
+}
+
+.container__row--cards_wrapper {
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 19px;
+
+  h2 {
+    font-weight: 700;
+  }
+}
+
+.container__row--under_row1 {
+  display: flex;
+  gap: 19px;
+
+  .under_row1--big_card {
+    display: flex;
+    background-color: $white;
+    align-items: center;
+    justify-content: space-between;
+    width: 550px;
+    box-shadow: 0px 5px 20px 0px #0000001A;
+    border-radius: 25px;
+    padding: 15px 25px;
+    cursor: pointer;
+
+    .big_card--logo {
+      margin-bottom: 35px;
+    }
+
+    .big_card--info {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .under_row1--card {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    align-items: start;
+    box-shadow: 0px 5px 20px 0px #0000001A;
+    border-radius: 25px;
+    padding: 15px 25px;
+    gap: 38px;
+    cursor: pointer;
+
+  }
+}
+
+.container__row--under_row2 {
+  display: flex;
+  gap: 19px;
+}
+
+.container__row--under_row2 .under_row2--card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  justify-content: space-between;
+  align-items: start;
+  box-shadow: 0px 5px 20px 0px #0000001A;
+  border-radius: 25px;
+  padding: 15px 25px;
+  gap: 38px;
+  cursor: pointer;
+  width: 266px;
+}
+
+.container__row .with-arrow {
+  background-color: $yellow;
+}
+
+.container__row .card-active {
+  background-color: $yellow;
+}
+
+
+.bg-gray_rectangle {
+  position: absolute;
+  top: 1250px;
+  z-index: -1;
 }
