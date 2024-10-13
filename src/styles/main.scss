@@ -23,6 +23,7 @@ body {
 .modal {
   display: none;
   position: fixed;
+  scrollbar-width: none;
   z-index: 99;
   left: 0;
   top: 0;
@@ -40,7 +41,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 15% auto;
-  max-width: 700px;
+  width: 700px;
   position: relative;
   border-radius: 8px;
   h2 {
@@ -63,7 +64,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   input {
     margin-top: 32px;
     width: 286px;
@@ -875,5 +875,11 @@ body {
     top: 2000px;
     height: 1200px;
     z-index: -1;
+  }
+  .modal-content{
+    width: 320px;
+  }
+  .modal-content__container__input-wrapper {
+    flex-direction: column;
   }
 }
