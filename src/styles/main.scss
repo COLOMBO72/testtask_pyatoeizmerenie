@@ -36,7 +36,15 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
+.container__row768plus{
+  width: 1119px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container__row375{
+  display: none;
+}
 .container__row-column-1 {
   width: 50%;
 }
@@ -156,18 +164,15 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-
   img {
     position: absolute;
     top: 10px;
   }
-
   h2 {
     font-weight: 700;
     font-size: 64px;
     z-index: 1;
   }
-
   p {
     z-index: 1;
     line-height: 34px;
@@ -318,6 +323,7 @@ body {
   z-index: -1;
 }
 
+// ADAPTIVE FOR 768 RES
 @media (max-width: 768px) {
   .container__general {
     max-width: 768px;
@@ -438,6 +444,211 @@ body {
     position: absolute;
     top: 1250px;
     height: 900px;
+    z-index: -1;
+  }
+}
+
+// ADAPTIVE FOR 375 RES
+@media (max-width: 375px) {
+  .container__general {
+    width: 375px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 110px;
+    align-items: center;
+  }
+  .threedots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 30px;
+  }
+  .container__row-column-1 .date1969 {
+    margin: 25px 16px;
+    img {
+      position: absolute;
+      top: -20px;
+      left: -65px;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 64px;
+      z-index: 1;
+    }
+    p {
+      z-index: 1;
+      line-height: 34px;
+      margin-left: 15%;
+      font-weight: 400;
+      font-size: 16px;
+      width: 300px;
+    }
+  }
+  .container__row-column-2 .date1997 {
+    top: 250px;
+    width: 280px;
+    img {
+      position: absolute;
+      top: 10px;
+      left: -180px;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 64px;
+      z-index: 1;
+    }
+    p {
+      z-index: 1;
+      line-height: 34px;
+      margin-left: 27px;
+      font-weight: 400;
+      font-size: 16px;
+      width: 220px;
+    }
+  }
+  .container__row-column-1 .date2008 {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    margin-top: 300px;
+    h2 {
+      font-weight: 700;
+      font-size: 64px;
+    }
+    p {
+      line-height: 34px;
+      font-weight: 400;
+      font-size: 16px;
+      width: 300px;
+    }
+  }
+  .triangle_gray {
+    position: absolute;
+    left: 60%;
+    top: 26%;
+    display: none;
+  }
+  .container__row-column-1 .block--oxford1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    img{
+      width: 333px;
+      position: absolute;
+      top: 5%;
+    }
+  }
+  .block--oxford1--text {
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 34px;
+    padding: 25px ;
+    background-color: #A5E5F4;
+    p {
+      width: 325px;
+    }
+  }
+  
+  .central_logo {
+    position: absolute;
+    width: 120px;
+    left: 65%;
+    z-index: 1;
+    top: 53%;
+  }
+  .container__row-column-1 .block--oxford1--cups {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .block--oxford1--cups{
+    position: absolute;
+    top: 65%;
+  }
+  .block--oxford1--cups__text{
+    display: flex;
+    margin-top: 12%;
+    margin-bottom: 0px;
+    img{
+      position: absolute;
+      z-index: 0;
+    }
+    p{
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      z-index: 33;
+    }
+  }
+  .block--oxford1--cups .line--image {
+    display: none;
+  }
+  .container__row-column-1{
+    width: 100%;
+  }
+  .container__row-column-1 .block--oxford2 {
+    width: 372px;
+    background-image: url('../images/oksford_2.png');
+    padding: 33px;
+    margin-top: 0;
+    p {
+      max-width: 237px;
+    }
+  }
+  .container__row {
+    width: 375px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container__row768plus{
+    display: none;
+  }
+  .container__row375{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container__row--under_row1{
+    display: none;
+  }
+  .container__row--under_row2{
+    display: none;
+  }
+  .container__row__for768{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 745px;
+    gap: 29px;
+  }
+  .container__row__for768 .under_row1--card768{
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    justify-content: space-between;
+    align-items: start;
+    box-shadow: 0px 5px 20px 0px #0000001A;
+    border-radius: 25px;
+    padding: 15px 25px;
+    gap: 38px;
+    cursor: pointer;
+    width: 158px;
+    transition: 0.2s;
+  }
+  .bg-gray_rectangle {
+    position: absolute;
+    top: 2000px;
+    height: 1200px;
     z-index: -1;
   }
 }
