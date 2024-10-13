@@ -6,6 +6,10 @@ let card1 = document.getElementsByClassName('under_row1--card');
 let card768 = document.getElementsByClassName('under_row1--card768');
 let bigcard1 = document.getElementsByClassName('under_row1--big_card');
 let cardlogo = document.getElementsByName('card_logo');
+var modal = document.getElementById('myModal');
+var btn = document.getElementById('myBtn');
+var span = document.getElementsByClassName('close')[0];
+
 let currentColor;
 let currentImage;
 
@@ -62,3 +66,19 @@ for (let i = 0; i < card768.length; i++) {
     cardlogo[i + 1].src = currentImage;
   });
 }
+
+// MODAL WINDOW
+
+btn.onclick = function () {
+  modal.style.display = 'block';
+};
+
+span.onclick = function () {
+  modal.style.display = 'none';
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
