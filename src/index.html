@@ -12,8 +12,24 @@
     <!-- МОДАЛЬНОЕ ОКНО -->
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <img src="images/icon_close.png" class="close" alt="close">
-            <p>Some text in the Modal..</p>
+            <div class="modal-content__container">
+                <img src="images/icon_close.png" class="close" alt="close">
+                <h2>Заказать звонок</h2>
+                <p>Оставьте свой номер и наш консультант свяжется с вами в ближайшее время!</p>
+                <div class="modal-content__container__input-wrapper">
+                    <input type="name" placeholder="Ваше имя*" name="inputName" id="inputName">
+                    <input type="number" placeholder="Телефон*" name="inputNumber" id="inputNumber">
+                </div>
+                <textarea name="comment" placeholder="Комментарий" id="comment"></textarea>
+                <div class="modal-content__container_checkbox">
+                    <label class="checkbox style-a">
+                      <input type="checkbox"/>
+                      <div class="checkbox__checkmark"></div>
+                      <div class="checkbox__body">Нажимая на кнопку вы соглашаетесь с <p>Политикой конфиденциальности</p></div>
+                    </label>
+                  </div>
+                <button class="modalBtn">Отправить</button>
+            </div>
         </div>
     </div>
 
